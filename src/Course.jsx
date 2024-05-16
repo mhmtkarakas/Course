@@ -1,0 +1,19 @@
+import React from "react";
+
+const Course = ({ id, content, title, price, removeOneCourse }) => {
+  //console.log(id);
+  return (
+    <div>
+      <div>
+        <h2 className="cardTitle">{title}</h2>
+        <h4 className="cardPrice">{price}</h4>
+      </div>
+
+      <button className="cardDeleteBtn" onClick={() => removeOneCourse(id)}>
+        Sil
+      </button>
+    </div>
+  );
+};
+
+export default Course;
