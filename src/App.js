@@ -1,4 +1,5 @@
 import { useEffect,useState } from 'react'
+import "./App.css"
 import  axios  from 'axios'
 import Courses from './Courses';
 import Loading from './Loading';
@@ -34,7 +35,19 @@ function App() {
       {loading ? (
         <Loading />
       ):(
-        <Courses courses={courses} removeCourse={deleteCourse} />
+      <>
+      {
+        courses.length === 0 ? (
+          <div className='refreshDiv'>
+            <h2>Butun Kurslari Sildin!</h2>
+            <button className="refreshBtn" onClick={()=>fetchCourses()}>Yenile</button>
+          </div>
+        ) : (
+          <Courses courses={courses} removeCourse={deleteCourse} />
+        )
+      }
+      </>
+       
       )}
     
     </div>

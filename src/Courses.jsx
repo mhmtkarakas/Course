@@ -5,11 +5,11 @@ import Course from './Course';
 const Courses = ({courses,removeCourse}) => {
     //console.log(courses);
   return (
-    <div>
+    <div className='courseMainDiv'>
       <div>
       <h2>Courses</h2>
       </div>
-     <div>
+     <div className='cardDiv'>
       {
         courses.map((course)=>(
           <Course key={course.id} {...course} removeOneCourse={removeCourse} />
