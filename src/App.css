@@ -10,12 +10,20 @@
     justify-content: center;
     gap: 20px;
 }
+.cardDiv .prevNextBtn{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    color: crimson;
+}
 .card{
     width: 350px;
     border: 1px solid gray;
     border-radius: 20px;
     padding: 25px;
 }
+
 .cardPrice{
  font-style: italic;
  color: crimson;
@@ -29,6 +37,20 @@
     color: #fff;
     cursor: pointer;
 }
+.randomCourseBtn{
+    width: 200px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+}
+.headDiv{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .refreshDiv{
     text-align: center;
 }
